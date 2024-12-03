@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the inspiring stories of tech heroes Lisa Su and Yun Yao.">
+    <meta name="keywords" content="Tech Heroes, Lisa Su, Yun Yao, technology, leadership, innovation">
+    <title>Our Tech Heroes</title>
+    <link rel="stylesheet" href="stylepage.css">
+    <style>
+        /* Basic body styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation bar styling */
+        header {
+            background-color: #00274d; 
+            color: white;
+            padding: 20px 0; 
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px; 
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ffbf00; 
+        }
+
+        /* Main content styling */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #00274d; 
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Hero section styling */
+        .hero-container {
+            display: flex;
+            justify-content: space-around; /* Distribute space between heroes */
+            flex-wrap: wrap;
+        }
+
+        .hero-item {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .hero-item img {
+            width: 200px; /* Set image size */
+            height: auto;
+            border-radius: 10px; /* Slight rounding for image */
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .hero-item img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        .hero-item a {
+            text-decoration: none;
+            color: #00274d;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .hero-item a:hover {
+            color: #ffbf00; 
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #00274d; 
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="tech-hero.html">Tech Hero</a></li>
+                <li><a href="classification.html">Image Classification</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Tech Heroes</h2>
+
+        <div class="hero-container">
+            <!-- Lisa Su Hero Section -->
+            <div class="hero-item">
+                <a href="lisasu.html"> 
+                    <img src="images/Lisa_Su.jpg" alt="Lisa Su">
+                    <p>Lisa Su</p>
+                </a>
+            </div>
+
+            <!-- Yun Yao Hero Section -->
+            <div class="hero-item">
+                <a href="yunyao.html"> 
+                    <img src="images/yunyao.jpg" alt="Yun Yao">
+                    <p>Yun Yao</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; LIS 500 Project</p>
+    </footer>
+</body>
+
+</html>

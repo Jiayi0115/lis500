@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Lisa Su, CEO of AMD, and her contributions to the semiconductor industry.">
+    <meta name="keywords" content="Lisa Su, AMD, semiconductor, technology, women in tech, leadership">
+    <title>Tech Hero: Lisa Su</title>
+    <link rel="stylesheet" href="stylepage.css">
+    <style>
+        /* Basic body styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation bar styling */
+        header {
+            background-color: #00274d;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ffbf00;
+        }
+
+        /* Main content styling */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #00274d;
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .introduction {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .introduction img {
+            flex: 1 1 300px;
+            max-width: 300px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .text-container {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .text-container a {
+            color: #00274d;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .text-container a:hover {
+            color: #ffbf00;
+        }
+
+        h3 {
+            color: #00274d;
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+
+        /* Horizontal timeline container */
+        .horizontal-timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 40px 0;
+            padding: 20px;
+            position: relative;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow-x: auto; /* For responsiveness */
+        }
+
+        /* Individual timeline items */
+        .timeline-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px; /* Slightly increase the width */
+            text-align: center;
+            padding: 20px; /* Increase padding for better spacing */
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0 15px; /* Increased horizontal margin for spacing between items */
+        }
+
+        /* Title (Year) Styling */
+        .timeline-item h4 {
+            font-size: 1.5em; /* Increase the font size */
+            font-weight: bold; /* Make the font bold */
+            color: #00274d;
+            margin-bottom: 10px; /* Add some space below the title */
+        }
+
+        /* Paragraph (Content) Styling */
+        .timeline-item p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+            margin-top: 0;
+            text-align: left; /* 或使用 center */
+        }
+
+
+        /* Horizontal timeline line */
+        .horizontal-timeline::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: #a50000;
+            z-index: -1;
+            transform: translateY(-50%);
+        }
+
+        /* Circle indicators */
+        .timeline-item::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: #a50000;
+            border-radius: 50%;
+            margin-bottom: 15px; /* Increase margin below the circle */
+        }
+
+        /* YouTube iframe styling */
+        iframe {
+            display: block;
+            width: 100%;
+            height: 450px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #00274d;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="tech-hero.html">Tech Hero</a></li>
+                <li><a href="classification.html">Image Classification</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Lisa Su: Leading AMD into the Future</h2>
+
+        <!-- Lisa Su's Photo and Self Introduction -->
+        <div class="introduction">
+            <img src="images/Lisa_Su.jpg" alt="Lisa Su, CEO of AMD">
+            <div class="text-container">
+                <p>
+                    Lisa Su is the CEO and President of <strong>AMD</strong> (Advanced Micro Devices), a global leader in the semiconductor industry. Under her leadership,
+                    AMD has become a major force in the development of high-performance computing, graphics, and visualization technologies.
+                </p>
+                <p>
+                    Lisa Su has transformed AMD’s business strategy, leading to record revenue growth and innovation in chip design, including the development of the AMD
+                    Ryzen processors and EPYC server chips. These advancements have cemented AMD as a leader in the semiconductor market.
+                </p>
+                <p>
+                    "Success is not about where you start but where you reach," says Lisa Su. Her vision and leadership have inspired many, particularly women and minorities
+                    in the technology industry.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Career Timeline of Lisa Su -->
+        <h3>Career Timeline of Lisa Su</h3>
+        <div class="horizontal-timeline">
+            <div class="timeline-item">
+                <h4>1994</h4>
+                <p>Graduated with a Ph.D. from MIT in Electrical Engineering.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2007</h4>
+                <p>Joined Freescale Semiconductor as Chief Technology Officer.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2012</h4>
+                <p>Joined AMD as Senior Vice President and General Manager of Global Business Units.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2014</h4>
+                <p>Became the President and CEO of AMD, leading the company's strategic turnaround.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2021</h4>
+                <p>Under Lisa's leadership, AMD achieved record financial results, challenging major competitors.</p>
+            </div>
+        </div>
+
+        <!-- Meet Lisa Su YouTube Video -->
+        <h3 class="video-title">Meet Lisa Su</h3>
+        <iframe src="https://www.youtube.com/embed/U5QEAzinnBM" title="Meet Lisa Su" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- About AMD -->
+        <h3>About AMD</h3>
+        <p>
+            Founded in 1969, AMD is known for developing innovative computing and graphics technologies. Under Lisa Su’s leadership, AMD has focused on high-performance
+            products and has seen major advancements in its processor lineup, challenging its competitors and pushing the industry forward.
+        </p>
+        <p>
+            Lisa Su’s contributions to the technology world have earned her numerous accolades, including being named one of the most powerful women in business by Forbes.
+        </p>
+        <p>
+            Learn more about Lisa Su's work at AMD:
+            <a href="https://www.amd.com" target="_blank">Visit AMD's website</a>
+        </p>
+
+        <!-- Introduction to AMD YouTube Video -->
+        <h3 class="video-title">Introduction to AMD</h3>
+        <iframe src="https://www.youtube.com/embed/vvF1eq5kjPs" title="Introduction to AMD" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+
+    <footer>
+        <p>&copy; LIS 500 Project</p>
+    </footer>
+</body>
+
+</html>

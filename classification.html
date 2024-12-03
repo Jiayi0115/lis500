@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Recognition Using Teachable Machine</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+            background: linear-gradient(to bottom, #f9f9f9, #e2e2e2);
+        }
+
+        header {
+            background-color: #00274d;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ffbf00;
+        }
+
+        section {
+            padding: 50px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2, h3 {
+            text-align: center;
+            color: #00274d;
+            margin-bottom: 20px;
+        }
+
+        section p, li {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            height: 400px;
+            border: none;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            color: white;
+            background: #00274d;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background: #ffbf00;
+        }
+
+        footer {
+            background-color: #00274d;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="tech-hero.html">Tech Hero</a></li>
+                <li><a href="classification.html">Image Classification</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="project-statement">
+        <h2>Project Statement</h2>
+        <p>
+            In an era where artificial intelligence (AI) is rapidly transforming various aspects of our lives, understanding the fundamentals of machine learning has become increasingly important. Our project aimed to explore these fundamentals by developing a fruit recognition system using Google's Teachable Machine platform. This endeavor not only allowed us to gain hands-on experience with machine learning but also provided insights into the ethical considerations and practical challenges of AI development.
+        </p>
+        <h3>Objectives</h3>
+        <ul>
+            <li>To develop a machine learning model capable of identifying three types of fruits: oranges, green grapes, and apples.</li>
+            <li>To gain practical experience with the machine learning pipeline, from data collection to model deployment.</li>
+            <li>To create an interactive webpage for real-time fruit recognition.</li>
+            <li>To explore the applications of machine learning in everyday life.</li>
+            <li>To reflect on ethical implications, inspired by Joy Buolamwini's "Unmasking AI."</li>
+        </ul>
+    </section>
+
+    <section id="project-process">
+        <h2>Project Process</h2>
+        
+        <h3>Data Collection and Preparation</h3>
+        <p>
+            The foundation of our project was a robust and diverse dataset. We captured a wide range of images featuring oranges, green grapes, and apples using various devices. Inspired by Buolamwini's work on algorithmic bias, we paid special attention to ensuring diversity in our dataset. This included capturing images under different lighting conditions, angles, and backgrounds to enhance the model's robustness and reduce potential biases.
+We organized and labeled the collected fruit images meticulously, ensuring a balanced representation of each fruit category. This process was time-consuming but crucial for the model's performance and fairness.
+
+        </p>
+        
+        <h3>Model Training</h3>
+        <p>
+            With our dataset prepared, we proceeded to the Teachable Machine platform for model training. We uploaded our images and initiated the training process, carefully monitoring key performance metrics. Throughout multiple training iterations, we fine-tuned model parameters to optimize accuracy across all fruit categories.
+This phase highlighted the importance of patience and persistence in machine learning. We encountered challenges such as overfitting and imbalanced performance across categories, which required us to adjust our approach and sometimes revisit our dataset for improvements.
+
+        </p>
+        <div style="text-align: center; margin-top: 20px;">
+            <img src="images/teachablemachine.png" alt="Teachable Machine Training" style="width: 80%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        </div>
+        
+        <h3>Web Integration</h3>
+        <p>
+            Once we achieved satisfactory model performance, we exported it from Teachable Machine and began the process of integrating it into a custom-designed webpage. This phase combined our machine learning work with web development skills, emphasizing the interdisciplinary nature of AI applications.
+We designed and developed a webpage using HTML, CSS, and JavaScript, incorporating features for both image upload and webcam-based recognition. This integration process required careful attention to user experience design, ensuring that the interface was intuitive and accessible to users with varying levels of technical expertise.
+
+        </p>
+        <div style="text-align: center; margin-top: 20px;">
+            <img src="images/javascript.png" alt="Web Integration Process" style="width: 80%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        </div>
+        
+        <h3>Testing and Refinement</h3>
+        <p>
+            The testing phase was critical in identifying and addressing real-world challenges. We conducted comprehensive testing across different devices and environmental conditions, simulating various scenarios in which the fruit recognition system might be used.
+This process revealed several issues, such as performance variations under extreme lighting conditions and difficulties with partially obscured fruits. We iteratively refined both the model and the web interface based on these test results, striving to create a robust and user-friendly system.
+
+        </p>
+    </section>
+
+    <section id="lessons-learned">
+        <h2>What lessons we learned from 'Unmasking AI'?</h2>
+        <ul>
+            <li><strong>Data Bias and Representation:</strong> Buolamwini's work on the "coded gaze" highlighted how biased datasets can lead to discriminatory AI outcomes. This insight was crucial as we collected images for our fruit recognition model. We intentionally diversified our dataset, capturing fruits under various conditions to ensure our model would perform fairly across different scenarios.</li>
+            <li><strong>Transparency and Accountability:</strong> The book emphasizes the need for transparency in AI systems. This guided our approach to carefully document each step of our project, from data collection to model deployment. We aimed to make our process understandable and accountable, reflecting Buolamwini's call for responsible AI development.</li>
+            <li><strong>Inclusive Design:</strong> Buolamwini stresses the importance of creating AI systems that are accessible to diverse users. This principle influenced our web interface design, where we prioritized a user-friendly experience for people with varying technical backgrounds. We also tested our model across different environments to ensure consistent performance.</li>
+            <li><strong>Understanding AI's Capabilities and Limitations:</strong> "Unmasking AI" challenges us to critically evaluate what AI can and cannot do. Our project demonstrated both the power of AI in object classification and its limitations, such as difficulties with blurry images or occlusions. This reinforced the importance of managing expectations about AI's capabilities.</li>
+            <li><strong>Ethical Considerations in AI Development:</strong> Buolamwini's work underscores the importance of embedding ethics into AI development. Even in our seemingly simple fruit classification project, we considered potential misuses or unintended consequences. This awareness will guide our approach to future AI projects, especially those with broader societal impacts.</li>
+        </ul>
+
+    <section id="video">
+        <h2>Video Demonstration</h2>
+        <iframe src="images/imageclassification.mp4" title="Algorithm Demonstration"></iframe>
+    </section>
+
+    <section id="try-model">
+        <h2>Try the Model</h2>
+        <div class="button-container" style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <a href="model.html" target="_blank">Try the Model</a>
+            <a href="https://teachablemachine.withgoogle.com/models/widBW3TWV/" target="_blank">View on Teachable Machine</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; LIS 500 Project</p>
+    </footer>
+</body>
+</html> 

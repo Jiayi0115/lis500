@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Project Website</title>
+    <style>
+        /* 全局样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            background: linear-gradient(to bottom, #f9f9f9, #e2e2e2);
+        }
+
+        /* 导航栏样式 */
+        header {
+            background-color: #00274d; /* 深蓝色 */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ffbf00; /* 悬停时的橙色 */
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #00274d; /* 深蓝色 */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* home.css 样式 */
+        .splash {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 0;
+            margin: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .main-image {
+            position: relative;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: auto;
+            filter: brightness(0.7); /* 图片变暗，突出文字 */
+        }
+
+        .welcome-message {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .welcome-message h2 {
+            font-size: 50px;
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .welcome-message p {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- 页眉和导航栏 -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="tech-hero.html">Tech Hero</a></li>
+                <li><a href="classification.html">Image Classification</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 欢迎页面 -->
+    <section class="splash">
+        <div class="main-image">
+            <img src="images/view.png" alt="Project Building Image">
+        </div>
+        <div class="welcome-message">
+            <h2>Welcome to Project for LIS 500</h2>
+            <p>Feel free to navigate through the different sections using the menu above. Here, you will find information about our members, resources on implicit bias and diversity, spotlights on our Tech Hero, and final project about image classification.</p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; LIS 500 Project</p>
+    </footer>
+</body>
+</html>
