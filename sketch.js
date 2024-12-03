@@ -61,11 +61,11 @@ function draw() {
 // STEP 3: Get the classification!
 function gotResults(error, results) {
   if (error) {
-    console.error("Error during classification:", error); // 检查是否有错误
+    console.error("Error during classification:", error); 
     return;
   }
-  console.log("Classification results:", results); // 打印结果
+  console.log("Classification results:", results); 
   label = results[0].label;
-  classifyVideo(); // 再次调用分类
+  classifyVideo(); 
 }
 
